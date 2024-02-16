@@ -57,7 +57,7 @@ def index():
     # stocks = {""}
     print(stocks)
 
-    return render_template("index.html", stock=stocks, cash=cash,
+    return render_template("index.html", stocks=stocks, cash=cash,
                                total_value=round(total_value), grand_total=round(grand_total))
 
 @app.route("/buy", methods=["GET", "POST"])
